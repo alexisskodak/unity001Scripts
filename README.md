@@ -13,18 +13,19 @@ to easily create cross platform applications part of the .NET Foundation
 - [Unity Tools](https://marketplace.visualstudio.com/items?itemName=Tobiah.unity-tools)
 
 ## Pour info
-```
+```c#
 using UnityEngine;
 using System.Collections;
 
-public class MainPlayer : MonoBehaviour {
+public class MainPlayer : MonoBehaviour // clase de base de l'API
+    {
 
-    // Use this for initialization
+    // Pour initialiser
     void Start () {
     
     }
     
-    // Update is called once per frame
+    // Update est apelle une fois par image
     void Update () {
     
     }
