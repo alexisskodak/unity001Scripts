@@ -13,7 +13,7 @@ to easily create cross platform applications part of the .NET Foundation
 - [Unity Tools](https://marketplace.visualstudio.com/items?itemName=Tobiah.unity-tools)
 
 ## Pour info
-'''
+```
 using UnityEngine;
 using System.Collections;
 
@@ -28,4 +28,4 @@ public class MainPlayer : MonoBehaviour {
     void Update () {
     
     }
-'''
+```
