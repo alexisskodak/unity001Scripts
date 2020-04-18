@@ -17,7 +17,7 @@ to easily create cross platform applications part of the .NET Foundation
 using UnityEngine;
 using System.Collections;
 
-public class MainPlayer : MonoBehaviour // MonoBehaviour: classe predefinie a partir de laquelle on construit les notres
+public class MaClasse : MonoBehaviour // MonoBehaviour: classe predefinie a partir de laquelle on construit les notres
 {
 
     // Pour initialiser
