@@ -18,15 +18,18 @@ using UnityEngine;
 using System.Collections;
 
 public class MainPlayer : MonoBehaviour // clase de base de l'API
-    {
+{
 
     // Pour initialiser
-    void Start () {
+    void Start () 
+    {
     
     }
     
     // Update est apelle une fois par image
-    void Update () {
+    void Update () 
+    {
     
     }
+}
 ```
