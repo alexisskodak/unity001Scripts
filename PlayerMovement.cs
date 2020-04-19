@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour {
 	float horizontalMove = 0f;
 	bool jump = false;
 	bool crouch = false;
+	bool shootMode = false;
 
 	// Update is called once per frame
 	void Update () {
@@ -38,7 +39,7 @@ public class PlayerMovement : MonoBehaviour {
 			crouch = false;
 			animator.SetBool("IsCrouching", false);
 		}
-
+		SetFireMode();
 	}
 
 	public void OnLanding ()
@@ -57,5 +58,21 @@ public class PlayerMovement : MonoBehaviour {
 		controller.Move(horizontalMove * Time.fixedDeltaTime, crouch, jump);
 		jump = false;
 	}
+
+	void SetFireMode()
+	{
+		if(Input.GetButtonDown("ShootModeToggle") && shootMode == false)
+		{
+			animator.SetBool("ShootMode", true);
+			shootMode = true;
+		}
+		else if (Input.GetButtonDown("ShootModeToggle") && shootMode == true)
+		{
+			animator.SetBool("ShootMode", false);
+			shootMode = false;
+		}
+	}
+
+
 }
 
